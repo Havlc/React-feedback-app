@@ -1,22 +1,13 @@
-/*function App() {
-    return <h1>Hello from App component</h1>;
-}*/
+import Header from "./components/Header";
 
-/* React Fragment
 const App = () => {
     return (
         <>
-            <h1>Hello</h1>
-            <p>from App component</p>
+            <Header text={'Feedback App'}/>
+            <div className='container'>
+                <h1>myApp</h1>
+            </div>
         </>
-    )
-}*/
-
-const App = () => {
-    return (
-        <div className='container'>
-            <h1>myApp</h1>
-        </div>
     )
 }
 
