@@ -13,8 +13,8 @@ function Header({text, backColor, fontColor}) {
 
 Header.defaultProps = {
     text: 'FeedbackUI',
-    backColor: 'yellow',
-    fontColor: 'green'
+    backColor: 'rgba(0,0,0,0.4)',
+    fontColor: '#ff6a95'
 }
 //typy
 Header.propTypes = {
