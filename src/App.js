@@ -1,34 +1,15 @@
 import { useState } from "react";
-import FeedbackItem from "./components/FeedbackItem";
+import FeedbackList from "./components/FeedbackList";
+import FeedbackData from "./data/Feedbackdata";
 import Header from "./components/Header";
 
 const App = () => {
-    const [state, setstate] = useState(
-        {
-            "feedback": [
-              {
-                "id": 1,
-                "rating": 10,
-                "text": "This is feedback item 1 coming from the backend"
-              },
-              {
-                "id": 2,
-                "rating": 8,
-                "text": "This is feedback item 2 coming from the backend"
-              },
-              {
-                "text": "This is feedback item 3 coming from the backend",
-                "rating": 10,
-                "id": 3
-              }
-            ]
-        }
-    )
+    const [feedback, setFeedback] = useState( FeedbackData )
     return (
         <>
             <Header />
             <div className='container'>
-                <FeedbackItem />
+                <FeedbackList feedback = {feedback}/>
             </div>
             
         </>
